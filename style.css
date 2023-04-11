@@ -34,15 +34,16 @@ body{
     font-size: 30px;
     margin: 0;
     width: 32px;
+    position:fixed;
     height: 32px;
-    /* left: -80%; */
+    left: -20PX;
 }
 .icons ul li{
     padding: 15px;
     border-bottom: 1px solid rgba (0,0,0,0.05);
     border-top: 1px solid rgba (225,225,225,0.05);
 }
-.iconsul li a{
+.icons ul li a{
    color: #bdb8d7;
    display: block; 
 }
@@ -92,7 +93,7 @@ body{
     border-top-left-radius: 5px;
 }
 .header{
-    padding:20px;
+    padding:20px 10%;
     background: whitesmoke;
     color: #717171;
     border-bottom: 1px solid #e0e4e8;
@@ -105,4 +106,49 @@ body{
 }
 .info div{
     margin-bottom: 20px;
+}
+
+
+.icons-btn span{
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 6px;
+    cursor: grabbing;
+    margin: 3px;
+}
+.active{
+    left: 30px;
+}
+.icons-btn{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing:border-box ;
+    cursor: grab;
+    border: none;
+    background-color: #d8b6b6;
+    border-bottom-right-radius: 100%;
+    outline: none;
+}
+.icons-btn span{
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #262626;
+  position: absolute;
+  top: 24px;
+  transition: .3s;  
+}
+.icons-btn span:before{
+   content: '';
+   position: absolute;
+   top: -10px;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: #262626;
+   transition: .3s; 
 }

@@ -7,22 +7,27 @@
     <title>Side Navbar</title>
     <link rel="stylesheet" href="style.css">
     
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript">
-        function iconsmenu(){
-            document.getElementsByClassName('icons') .classList.icons('active');
-
-
-        }
-
+        $(document).ready(function () {
+        $('.icons-btn').click(function () {
+        $('.icons').toggleClass('active')
+        $('.icons-btn').toggleClass('toggle')
+        
+    })
+    
+})
     </script>
+    
+
 </head>
 <body>
     
     
     <div class="wrapper">
-        <div class="icons" onclick="iconsmenu()">
-                <div class="icons-btn">
+        <div class="icons">
+                <div>
+                    <button class="icons-btn"></button>
                     <span></span>
                     <span></span>
                     <span></span>
